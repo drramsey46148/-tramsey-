@@ -1,0 +1,19 @@
+/* Full styles.css content from previous code */
+
+:root{--brand:#3e4b2b;--accent:#6b8e23;--text:#222;--bg:#f3f3f3;--container-width:1000px}
+*{box-sizing:border-box}html,body{height:100%}body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.4}
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;padding:.5rem;background:#000;color:#fff;border-radius:4px;z-index:1000}
+.header-inner{display:flex;align-items:center;gap:1rem;padding:1rem;max-width:var(--container-width);margin:0 auto}
+.logo{width:120px;height:auto;border-radius:6px}.site-header{background:var(--brand);color:#fff}.site-header h1{margin:0;font-size:1.4rem}
+.tagline{margin:0;font-size:0.95rem;opacity:0.95}.site-nav{background:var(--accent);}.site-nav ul{list-style:none;margin:0;padding:.6rem;display:flex;gap:.6rem;justify-content:center}
+.site-nav a{color:#fff;text-decoration:none;padding:.5rem .8rem;border-radius:6px;font-weight:700}
+.site-nav a:focus,.site-nav a:hover{background:#fff;color:var(--brand);outline:3px solid rgba(255,255,255,.2)}
+.container{max-width:var(--container-width);margin:1.25rem auto;padding:1rem;background:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.hero-img{width:100%;height:auto;border-radius:8px;margin-top:1rem}.lead{font-size:1.05rem}figure{margin:1rem 0}
+table{width:100%;border-collapse:collapse;margin:1rem 0}caption{font-weight:700;text-align:left;margin-bottom:.5rem}
+th,td{border:1px solid #ddd;padding:.6rem;text-align:left}th{background:#f9f9f9}
+.site-footer{background:var(--brand);color:#fff;padding:1rem;margin-top:1.5rem}
+@media(max-width:700px){.header-inner{flex-direction:column;align-items:flex-start}.site-nav ul{flex-direction:column;align-items:stretch}}
+button{background:var(--accent);color:#fff;border:none;padding:.6rem 1rem;border-radius:6px;cursor:pointer}button:focus{outline:3px solid #000}
+input,textarea{width:100%;padding:.5rem;border:1px solid #ccc;border-radius:6px}img{max-width:100%;height:auto}
